@@ -12,8 +12,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -28,47 +27,37 @@ public class StockResourceImpl implements StockResource {
     @GET
     @Path("{stockName}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<stock> getStock(@PathParam("stockName")String stockName) {
-        List<stock> stocks = new ArrayList<stock>();
-
+    public Stock getStock(@PathParam("stockName")String stockName) {
+        Stock stock=new Stock();
         String stockInformation = getStockInformation(stockName);
         String[] stockResponse = stockInformation.split(",");
 
-        if (stockInformation == "" && stockResponse.length != 3) {
-            return null;  //To change body of implemented methods use File | Settings | File Templates.
-        } else {
-            stock stockObject = new stock();
-            stockObject.setName(stockResponse[0]);
-            stockObject.setAsk(Float.parseFloat(stockResponse[1]));
-            stockObject.setBid(Float.parseFloat(stockResponse[2]));
-            stocks.add(stockObject);
-            return stocks;
+        if (!(stockInformation .equals("")) && stockResponse.length == 3) {
+            stock.setName(stockResponse[0]);
+            stock.setAsk(Float.parseFloat(stockResponse[1]));
+            stock.setBid(Float.parseFloat(stockResponse[2]));
         }
+        return stock;
     }
 
     private String getStockInformation(String stockName) {            //get stock Information from yahoo API
         String outputMessage = "";
-        String information = "";
+        URL stockApiURL ;
+        HttpURLConnection connection ;
+        InputStream messageInputstream;
+
         try {
-            InputStream message;
-            URL stockApiURL = new URL("http://download.finance.yahoo.com/d/quotes.csv?s=" + stockName + "&f=nab");
-            HttpURLConnection connection = (HttpURLConnection) stockApiURL.openConnection();
+            stockApiURL = new URL("http://download.finance.yahoo.com/d/quotes.csv?s=" + stockName + "&f=nab");
+            connection = (HttpURLConnection) stockApiURL.openConnection();
             connection.connect();
-            message = connection.getInputStream();
-            BufferedReader requestMessage = new BufferedReader(new InputStreamReader(message));
-
-            while ((outputMessage = requestMessage.readLine()) != null) {
-                information += outputMessage;
-            }
-            //System.out.println(information);
-
+            messageInputstream = connection.getInputStream();
+            BufferedReader requestMessage = new BufferedReader(new InputStreamReader(messageInputstream));
+            outputMessage=requestMessage.readLine();
         } catch (MalformedURLException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         } catch (IOException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } finally {
-            return information;
         }
-
+        return outputMessage;
     }
 }

@@ -12,5 +12,5 @@ import java.util.List;
 public interface StockResource {
 
 
-    public List<stock> getStock(String stockName);
+    public Stock getStock(String stockName);
 }
