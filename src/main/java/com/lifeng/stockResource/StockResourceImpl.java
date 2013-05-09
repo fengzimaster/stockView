@@ -42,12 +42,11 @@ public class StockResourceImpl implements StockResource {
 
     private String getStockInformation(String stockName) {            //get stock Information from yahoo API
         String outputMessage = "";
-        URL stockApiURL ;
         HttpURLConnection connection ;
         InputStream messageInputstream;
 
         try {
-            stockApiURL = new URL("http://download.finance.yahoo.com/d/quotes.csv?s=" + stockName + "&f=nab");
+            URL stockApiURL = new URL("http://download.finance.yahoo.com/d/quotes.csv?s=" + stockName + "&f=nab");
             connection = (HttpURLConnection) stockApiURL.openConnection();
             connection.connect();
             messageInputstream = connection.getInputStream();

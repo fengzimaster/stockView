@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cc5d634-f2ee-4288-866a-97ac81220861" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/stock.java" afterPath="$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/Stock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/StockResource.java" afterPath="$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/StockResource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/StockResourceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/StockResourceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stock.iml" afterPath="$PROJECT_DIR$/stock.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stock.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/web.xml" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1367543443416" ignored="false" />
-    <file path="/StockResourceImpl.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065185848" ignored="false" />
+    <file path="/StockResourceImpl.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368069582433" ignored="false" />
     <file path="/StockResource.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368064626789" ignored="false" />
-    <file path="/Dummy.txt" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368063735183" ignored="false" />
+    <file path="/Dummy.txt" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065773806" ignored="false" />
     <file path="/Stock.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368064599572" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/Storage.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065775143" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/ObjectSerialize/ObjectSerializeUtil.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065775143" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/RedisStorage.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065775143" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/MongoStorage.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065775143" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/StorgeFactory.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368066101548" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/RedisStorageFactory.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368066142969" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/testStorge.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065775143" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/main/java/com/classForNosql/lifeng/MongoStorageFactory.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368066160901" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/test/java/classForNosql/AppTest.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368065775149" ignored="false" />
+    <file path="$PROJECT_DIR$/../classForNosql/src/test/java/classForNosql/StorgeTest.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368066733157" ignored="false" />
+    <file path="/StorgeTest.java" changelist="9cc5d634-f2ee-4288-866a-97ac81220861" time="1368066731959" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +103,7 @@
       <file leaf-file-name="StockResourceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/StockResourceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="29" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.9248748">
+            <state line="44" column="17" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.5102389">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -620,7 +625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lifeng/stockResource/StockResourceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="29" selection-start="2265" selection-end="2265" vertical-scroll-proportion="0.9248748">
+        <state line="44" column="17" selection-start="1381" selection-end="1381" vertical-scroll-proportion="0.5102389">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
